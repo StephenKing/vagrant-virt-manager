@@ -1,12 +1,12 @@
 Vagrant.configure(2) do |config|
-  config.vm.box = "bento/debian-8.2"
+  config.vm.box = "bento/debian-8.4"
 
   config.ssh.forward_agent = true
   config.ssh.forward_x11 = true
 
   config.vm.provider "virtualbox" do |vb|
     # Display the VirtualBox GUI when booting the machine
-    vb.gui = true
+    # vb.gui = true
   end
 
   config.vm.provision "shell", inline: <<-SHELL
