@@ -11,6 +11,6 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
-    sudo apt-get install -y task-xfce-desktop virt-manager ssh-askpass
+    sudo apt-get install -y xorg virt-manager ssh-askpass
   SHELL
 end
