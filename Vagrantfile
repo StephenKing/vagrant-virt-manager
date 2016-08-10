@@ -1,5 +1,5 @@
 Vagrant.configure(2) do |config|
-  config.vm.box = "bento/debian-8.4"
+  config.vm.box = "ubuntu/xenial64"
 
   config.ssh.forward_agent = true
   config.ssh.forward_x11 = true
